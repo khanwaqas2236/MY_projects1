@@ -36,19 +36,62 @@ python swat_scanner.py
 # Start the tool
 python swat_scanner.py
 
-# Show available modules
+# HELP & NAVIGATION COMMANDS
+swat> help                    # Show all commands
+swat> banner                  # Show SWAT banner
+swat> clear                   # Clear screen
+swat> show modules            # List all available modules
+swat> exit                    # Quit the tool
+
+# Subdomain Discovery
+swat> use subdomain_enum
+swat(subdomain_enum)> set TARGET example.com
+swat(subdomain_enum)> run
+
+# XSS Scanning
+swat> use xss_scanner
+swat(xss_scanner)> set TARGET example.com
+swat(xss_scanner)> run
+
+# SQL Injection Scanning
+swat> use sqli_detector
+swat(sqli_detector)> set TARGET example.com
+swat(sqli_detector)> run
+
+# Redirect Vulnerability Scanning
+swat> use redirect_check
+swat(redirect_check)> set TARGET example.com
+swat(redirect_check)> run
+
+# Full Comprehensive Audit
+swat> use full_audit
+swat(full_audit)> set TARGET example.com
+swat(full_audit)> run
+
+# 🎪 EXPLOITATION COMMANDS
+[?] Do you want to proceed with exploitation? (yes/no): yes
+
+## 🚨 QUICK START EXAMPLE
+# 1. Start tool
+python swat_scanner.py
+
+# 2. Show modules
 swat> show modules
 
-# Use a specific module
+# 3. Use XSS scanner
 swat> use xss_scanner
 
-# Set target
+# 4. Set target
 swat(xss_scanner)> set TARGET testfire.net
 
-# Run the scan
+# 5. Run scan
 swat(xss_scanner)> run
-Available Modules
-subdomain_enum - Discover subdomains
+
+# 6. Exploit when asked
+[?] Do you want to proceed with exploitation? (yes/no): yes
+
+# 7. Choose demo type
+Enter choice (1-4): 1
 
 xss_scanner - Cross-Site Scripting detection
 
