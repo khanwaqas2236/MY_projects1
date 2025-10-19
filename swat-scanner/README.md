@@ -22,19 +22,17 @@ A powerful Metasploit-style web vulnerability scanner with interactive exploitat
 - pip (Python package manager)
 
 ### Step 1: Clone the Repository
-```bash
+
 git clone https://github.com/YOUR_USERNAME/my-projects.git
 cd my-projects/swat-scanner
 
-Step 2: Install Dependencies
+## Step 2: Install Dependencies
 bash
 pip install colorama
 Step 3: Run the Tool
 bash
 python swat_scanner.py
-🎯 Quick Start
-Basic Usage
-bash
+
 # Start the tool
 python swat_scanner.py
 
@@ -60,14 +58,14 @@ redirect_check - Open redirect vulnerability checks
 
 full_audit - Comprehensive web application audit
 
-🛠️ Usage Examples
+## 🛠️ Usage Examples
 Example 1: Full Website Audit
 bash
 swat> use full_audit
 swat(full_audit)> set TARGET example.com
 swat(full_audit)> run
-Example 2: SQL Injection Testing
-bash
+
+## Example 2: SQL Injection Testing
 swat> use sqli_detector
 swat(sqli_detector)> set TARGET testphp.vulnweb.com
 swat(sqli_detector)> run
@@ -76,31 +74,32 @@ bash
 swat> use subdomain_enum
 swat(subdomain_enum)> set TARGET google.com
 swat(subdomain_enum)> run
-🎪 Exploitation Demos
+
+## 🎪 Exploitation Demos
 After scanning, SWAT can generate interactive HTML demonstrations:
 
-XSS Demo
+## XSS Demo
 Creates an HTML file with working XSS popups
 
 Shows how payloads execute in victim browsers
 
 Includes educational explanations
 
-SQL Injection Demo
+## SQL Injection Demo
 Generates data extraction reports
 
 Shows stolen credentials and database information
 
 Demonstrates real attack impact
 
-Redirect Attack Demo
+## Redirect Attack Demo
 Simulates open redirect vulnerabilities
 
 Shows phishing attack scenarios
 
 Includes live redirect demonstrations
 
-🎨 Interface Overview
+## 🎨 Interface Overview
 text
 swat> help
 
@@ -115,7 +114,8 @@ Module Commands:
     use <module>           Use a specific module
     set TARGET <domain>    Set target domain
     run                    Execute current module
-🎯 Recommended Test Targets
+    
+## 🎯 Recommended Test Targets
 For legal practice, use these intentionally vulnerable applications:
 
 Altoro Mutual: testfire.net (Demo banking app)
@@ -126,7 +126,7 @@ bWAPP: Download and run locally
 
 DVWA: Download and run locally
 
-⚠️ Legal & Ethical Usage
+## ⚠️ Legal & Ethical Usage
 🚨 IMPORTANT DISCLAIMER
 This tool is for educational and authorized testing purposes only.
 
@@ -139,7 +139,7 @@ Educational environments and CTF competitions
 
 Security research with proper authorization
 
-❌ Illegal Usage
+## ❌ Illegal Usage
 Scanning websites without explicit permission
 
 Attacking systems you don't own
@@ -148,10 +148,10 @@ Malicious hacking activities
 
 Any unauthorized security testing
 
-Legal Notice
+## Legal Notice
 The developers and contributors are not responsible for any misuse of this tool. Users are solely responsible for ensuring they have proper authorization before conducting any security testing. Unauthorized testing may violate laws and result in criminal charges.
 
-🛡️ Responsible Disclosure
+## 🛡️Responsible Disclosure
 If you discover vulnerabilities using this tool:
 
 Get permission before testing
@@ -162,44 +162,8 @@ Follow disclosure guidelines and legal requirements
 
 Never exploit vulnerabilities without authorization
 
-🔧 Troubleshooting
-Common Issues
-ModuleNotFoundError: No module named 'colorama'
 
-bash
-pip install colorama
-# or
-pip3 install colorama
-Python not found
-
-bash
-python3 swat_scanner.py
-# or on Windows
-py swat_scanner.py
-Permission denied
-
-bash
-chmod +x swat_scanner.py
-Platform Specific Commands
-Windows:
-
-cmd
-py -m pip install colorama
-py swat_scanner.py
-Linux/Mac:
-
-bash
-pip3 install colorama
-python3 swat_scanner.py
-🏗️ Project Structure
-text
-swat-scanner/
-├── swat_scanner.py          # Main scanner application
-├── requirements.txt         # Python dependencies
-├── README.md               # This documentation
-├── .gitignore              # Git ignore rules
-└── LICENSE                 # MIT License
-🤝 Contributing
+## 🤝 Contributing
 We welcome contributions! Please:
 
 Fork the repository
@@ -212,24 +176,15 @@ Push to the branch (git push origin feature/AmazingFeature)
 
 Open a Pull Request
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-🙏 Acknowledgments
+## 🙏 Acknowledgments
 Inspired by Metasploit framework interface
 
 Test targets provided by OWASP and security communities
 
 Built for educational purposes in cybersecurity
 
-📞 Support
-If you encounter issues:
 
-Check the troubleshooting section above
-
-Search existing GitHub issues
-
-Create a new issue with detailed information
 
 Remember: With great power comes great responsibility. Use this tool ethically and legally.
 
