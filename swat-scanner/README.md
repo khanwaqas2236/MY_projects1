@@ -38,40 +38,61 @@ python swat_scanner.py
 
 # HELP & NAVIGATION COMMANDS
 swat> help                    # Show all commands
+
 swat> banner                  # Show SWAT banner
+
 swat> clear                   # Clear screen
+
 swat> show modules            # List all available modules
+
 swat> exit                    # Quit the tool
 
 # Subdomain Discovery
+
 swat> use subdomain_enum
+
 swat(subdomain_enum)> set TARGET example.com
+
 swat(subdomain_enum)> run
 
 # XSS Scanning
+
 swat> use xss_scanner
+
 swat(xss_scanner)> set TARGET example.com
+
 swat(xss_scanner)> run
 
 # SQL Injection Scanning
+
 swat> use sqli_detector
+
 swat(sqli_detector)> set TARGET example.com
+
 swat(sqli_detector)> run
 
 # Redirect Vulnerability Scanning
+
 swat> use redirect_check
+
 swat(redirect_check)> set TARGET example.com
+
 swat(redirect_check)> run
 
 # Full Comprehensive Audit
+
 swat> use full_audit
+
 swat(full_audit)> set TARGET example.com
+
 swat(full_audit)> run
 
 # 🎪 EXPLOITATION COMMANDS
+
 [?] Do you want to proceed with exploitation? (yes/no): yes
 
 ## 🚨 QUICK START EXAMPLE
+
 # 1. Start tool
 python swat_scanner.py
 
@@ -102,7 +123,9 @@ redirect_check - Open redirect vulnerability checks
 full_audit - Comprehensive web application audit
 
 ## 🛠️ Usage Examples
+
 Example 1: Full Website Audit
+
 bash
 swat> use full_audit
 swat(full_audit)> set TARGET example.com
