@@ -109,9 +109,11 @@ swat(xss_scanner)> set TARGET testfire.net
 swat(xss_scanner)> run
 
 # 6. Exploit when asked
+
 [?] Do you want to proceed with exploitation? (yes/no): yes
 
 # 7. Choose demo type
+
 Enter choice (1-4): 1
 
 xss_scanner - Cross-Site Scripting detection
@@ -126,22 +128,31 @@ full_audit - Comprehensive web application audit
 
 Example 1: Full Website Audit
 
-bash
+
 swat> use full_audit
+
 swat(full_audit)> set TARGET example.com
+
 swat(full_audit)> run
 
 ## Example 2: SQL Injection Testing
+
 swat> use sqli_detector
+
 swat(sqli_detector)> set TARGET testphp.vulnweb.com
+
 swat(sqli_detector)> run
+
 Example 3: Subdomain Discovery
-bash
+
 swat> use subdomain_enum
+
 swat(subdomain_enum)> set TARGET google.com
+
 swat(subdomain_enum)> run
 
 ## 🎪 Exploitation Demos
+
 After scanning, SWAT can generate interactive HTML demonstrations:
 
 ## XSS Demo
@@ -166,22 +177,29 @@ Shows phishing attack scenarios
 Includes live redirect demonstrations
 
 ## 🎨 Interface Overview
-text
+
 swat> help
 
 Core Commands:
     help                    Show this help menu
+    
     banner                  Show the SWAT banner
+    
     exit                    Exit the framework
+    
     clear                   Clear the screen
+    
     show modules            List all available modules
 
 Module Commands:
     use <module>           Use a specific module
+    
     set TARGET <domain>    Set target domain
+    
     run                    Execute current module
     
 ## 🎯 Recommended Test Targets
+
 For legal practice, use these intentionally vulnerable applications:
 
 Altoro Mutual: testfire.net (Demo banking app)
@@ -193,6 +211,7 @@ bWAPP: Download and run locally
 DVWA: Download and run locally
 
 ## ⚠️ Legal & Ethical Usage
+
 🚨 IMPORTANT DISCLAIMER
 This tool is for educational and authorized testing purposes only.
 
