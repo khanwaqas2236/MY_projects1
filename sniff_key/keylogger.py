@@ -12,7 +12,7 @@ try:
 except ImportError:
     pass
 
-WEBHOOK_URL = "https://canary.discord.com/api/webhooks/1429943799207039067/PRA6bv6zQUEG66i5XLEO5QtaZtUez6jDxE8Ts9k2cb6rvpbHHYjONaNDqz_kI8bkYI3P"
+WEBHOOK_URL = "Your discord url from integrations"
 
 def is_windows():
     return platform.system() == "Windows"
