@@ -30,8 +30,9 @@ WEBHOOK_URL = "https://discord.com/api/webhooks/your_webhook_id/your_webhook_tok
 ## 🚀 Quick Start (Windows)
 
 ### Prerequisites
-```cmd
+
 # Install Python 3.8+
+
 python --version
 
 # 🔐 Code2 Advanced Keylogger - Professional Security Research Tool
