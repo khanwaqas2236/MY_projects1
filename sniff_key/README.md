@@ -88,3 +88,23 @@ A professional-grade keylogger implementation featuring advanced evasion techniq
 
 # Install dependencies
 pip install -r requirements.txt
+
+# Removing the .exe from startup folder
+
+Step 2. Stop any process using that file
+
+Get-Process | Where-Object { $_.Path -eq "C:\Users\Mrlaptop\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\WindowsSystemService.exe" } | Stop-Process -Force
+
+Step 3. Take ownership and set permissions so you can delete it
+
+takeown /f "C:\Users\Mrlaptop\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\WindowsSystemService.exe"
+icacls "C:\Users\Mrlaptop\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\WindowsSystemService.exe" /grant "%USERNAME%":F /t
+
+Step 4. Delete it again forcefully
+
+Remove-Item "C:\Users\Mrlaptop\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\WindowsSystemService.exe" -Force
+
+Step 5. Confirm removal
+
+Test-Path "C:\Users\Mrlaptop\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\WindowsSystemService.exe"
+
